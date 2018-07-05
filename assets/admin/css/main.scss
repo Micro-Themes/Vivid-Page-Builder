@@ -1,0 +1,12 @@
+@import 'mixins';
+
+$invalidFieldColor:#2E3875;
+
+$buttonColor:#2e3875; 
+$buttonActiveColor:#F83766; 
+$formFont:'Open sans';
+
+/* SASS imports */ 
+@import 'admin-flexbox';
+@import 'admin-page-builder';
+@import 'panel-ui';

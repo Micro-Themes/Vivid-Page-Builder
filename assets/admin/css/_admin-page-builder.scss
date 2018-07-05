@@ -1,0 +1,452 @@
+/* Page Builder Admin CSS */
+
+#postdivrich{
+	display:block;
+}
+#vivid-page-builder {
+	margin: 20px 0;
+	display: none;
+}
+
+.vivid-page-builder-wrapper.active {
+	display:block !important;	
+}
+
+body.vivid-page-builder-active #postdivrich {
+	display: none;	
+}
+
+/* Templates container - remains hidden */
+.vivid-templates {
+	display: none;
+}
+
+
+
+/* Rows */
+.vivid-rows{
+	margin-bottom: 30px;
+}
+
+.vivid-rows-message{
+	border: 2px dashed #ccc;
+	padding: 10px 20px;
+	text-align: center;
+}
+
+/* Action Buttons */
+.vivid-pb-action-buttons-container {
+	margin-top:20px;	
+}
+
+.vivid-actions{
+	margin-bottom: 30px;
+}
+
+.vivid_pb_button, .vivid-add-row {
+	margin-right:5px !important;	
+	border:none !important;
+	box-shadow:none !important;
+	background-color:#4e59a5 !important;
+	border-radius:2px !important;
+	text-shadow:none !important;
+	
+	transition:all 0.3s;
+}
+
+.vivid_pb_button:focus {
+	text-shadow:none !important;
+	box-shadow:none !important;
+}
+
+.vivid_pb_button:hover, .vivid-add-row:hover {
+	background-color:#1d234a !important;	
+}
+
+#vivid_pb_custom_css {
+	float:right;	
+	margin:0px !important;
+}
+
+
+.vivid_pb_export, .vivid_pb_import, .vivid_pb_save_template, .vivid_pb_load_template {
+	display:none !important;
+}
+
+.vivid_pb_export.active, .vivid_pb_import.active, .vivid_pb_save_template.active, .vivid_pb_load_template.active {
+    display: inline-block !important;
+    line-height: 0;
+    padding: 0 10px !important;
+    width: 35px !important;
+}
+
+
+
+/* Vivid Container */
+.vivid-container {
+	font-size: 16px;
+	border: 1px solid #ccc;
+	background: #171d46;
+	margin-bottom: 20px;
+	width:100%;	
+	text-align:center;
+	margin-bottom:20px;
+	padding-bottom: 10px;
+	
+}
+
+.vivid-container.vivid-container-collapse {
+	height:30px;	
+	overflow:hidden;
+}
+
+.vivid-handle {
+	padding: 10px;
+	border-right: 1px solid #71c6e5;
+	float: left;
+	cursor: pointer;
+	color: #fff;
+	cursor: grab;
+	background-color:  #349ec5;
+	
+	transition: all 0.4s;
+	
+}
+
+.vivid-handle:hover {
+	background-color: #237c9c;	
+}
+
+.vivid-row-handle {
+	cursor: grab;
+	float:left;
+	background-color: #349ec5;
+    border-radius: 2px;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    height: 21px;
+    line-height: 1.5;
+    margin-right: 7px;
+    padding: 2px 3px 0 2px;
+    text-align: center;
+    width: 18px;
+	
+	transition: all 0.4s ease 0s;
+}
+
+.vivid-row-handle:hover {
+	background-color: #237c9c;	
+}
+
+.vivid-row-controls {
+	padding: 0 15px 15px;
+    position: relative;
+    width: 100%;	
+}
+
+
+
+/* Sortable Placeholder */
+.vivid-order {
+    color: white;
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+    height: 23px;
+    line-height: 1.5;
+    margin: 8px 8px 8px 0;
+    text-align: center;
+    width: 23px;
+}
+
+.vivid-container.ui-sortable-placeholder {
+	border: 1px dashed #ccc;
+	visibility: visible !important;
+	background: transparent;
+}
+
+.vivid-row-title {
+	border-bottom: 0px solid #ccc;
+	margin:0 0 25px;
+	background-color:#404b94;
+}
+
+.vivid-row-title:after{
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+
+
+.vivid-row-title-text {
+	padding: 10px 0 10px 10px;
+	display: inline-block;
+	float:left;
+	color:white;
+	font-size:12px;
+}
+
+.vivid-remove, .vivid-clone-row {
+	padding: 10px;
+	border-left: 1px solid #145b8d;
+	background-color: #367eb2;
+	float: right;
+	cursor: pointer;
+	color: white;
+	
+	transition: all 0.4s;
+}
+
+.vivid-remove:hover, .vivid-clone-row:hover {
+	background-color: #2e5486;
+}
+
+.vivid-minimize-cols, .vivid-row-options {
+	padding: 10px;
+	border-left: 1px solid #145b8d;
+	background-color: #367eb2;
+	float: right;
+	cursor: pointer;
+	color: white;
+	transition: all 0.4s;
+}
+
+.vivid-minimize-cols:hover, .vivid-row-options:hover {
+	background-color: #2e5486;
+}
+
+.vivid-add-cols, .vivid-add-magazine-cols {
+	padding: 10px;
+	border-left: 1px solid #145b8d;
+	float: right;
+	cursor: pointer;
+	color: #fff;
+	background-color:#4c99cf;
+	
+	transition: all 0.4s;
+
+}
+
+.vivid-add-cols:hover, .vivid-add-magazine-cols:hover {
+	background-color: #2e5486;
+}
+
+
+.vivid-row-remove, .vivid-clone-col {
+	float: right;
+	cursor: pointer;
+	background-color:#22b4ff;
+    border-radius: 2px;
+	color: white;
+	font-size: 14px;
+    font-weight: 300;
+    height: 21px;
+    line-height: 1.5;
+    padding: 2px 2px 0 3px;
+    text-align: center;
+    width: 18px;
+	margin-left:5px;
+	
+	transition: all 0.4s;
+}
+
+.vivid-row-remove:hover, .vivid-clone-col:hover {
+	background-color: #1097dc;
+}
+
+
+.vivid-colum-buttons, .vivid-magazine-column-buttons {
+    border-top: -1px solid #FFFFFF;
+    clear: both;
+    height: 0px;
+    width: 100%;
+	overflow:hidden;
+	margin-top:-1px;
+	
+	transition:all 0.3s;
+}
+
+.vivid-colum-buttons.active, .vivid-magazine-column-buttons.active {
+	border-top: 1px solid #5f69ad;
+	height: 40px;	
+	background-color:#353c6f;
+}
+
+.vivid-column-button {
+	display:inline-block;
+	width:auto;
+	height:auto;
+	padding:5px 10px 2px;
+	opacity:.8;
+	position:relative;
+	
+	transition:all 0.3s;
+}
+
+.vivid-column-button:hover {
+	opacity:1;
+}
+
+.vivid-row-input, .vivid-row-content {
+	width:100%;	
+}
+
+.vivid-default-message {
+	color:white;	
+}
+
+.vivid-default-message.inactive {
+	display:none;	
+}
+
+/* Tooltip */
+[data-tooltip]::before, [data-tooltip]::after {
+    opacity: 0;
+    pointer-events: none;    
+    visibility:hidden;	
+	
+	transform:translateX(-20px);
+	transition:all 0.15s;
+	
+}
+
+[data-tooltip]:not([data-tooltip=""]) {
+    cursor: pointer;
+    position: relative;
+    z-index: 9999;
+}
+
+[data-tooltip]:not([data-tooltip=""])::before {
+    -moz-box-orient: vertical;
+    background-color: #000;
+    color: #fff;
+    content: attr(data-tooltip);
+    display: -webkit-box;
+    font-size: 11px;
+    left: auto;
+    line-height: 18px;
+    margin-right: 10px;
+    margin-top: -14px;
+    max-height: 177px;
+    overflow: hidden;
+    padding: 5px 10px;
+    position: absolute;
+    right: 100%;
+    text-align: left;
+    text-overflow: ellipsis;
+    text-transform: none;
+    top: 50%;
+    white-space: nowrap;
+	/*font-family:'Open Sans';*/
+	
+	
+}
+
+[data-tooltip]:hover:not([data-tooltip=""])::before, [data-tooltip]:hover:not([data-tooltip=""])::after {
+	transform:translateX(0px) !important;
+	opacity:1;
+	visibility:visible;
+}
+
+/*[data-tooltip]:not([data-tooltip=""])::after {
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    content: " ";
+    font-size: 0;
+    line-height: 0;
+    margin-right: 5px;
+    margin-top: -5px;
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    width: 0;
+}*/
+
+/* Position tooltip on right side */
+.pro-cast-article-post-meta-info-template3 [data-tooltip]:not([data-tooltip=""])::before {
+    left: 100%;
+    margin-left: 10px;
+    margin-right: 0;
+    right: auto;
+    transform: translateX(20px);
+	font-size:13px;
+	/*font-family:"Open sans";*/
+}
+
+/* Display arrow pointer on left side */
+.pro-cast-article-post-meta-info-template3 [data-tooltip]:not([data-tooltip=""])::after {
+    border-color: transparent #000 transparent transparent;
+    border-width: 5px 5px 5px 0;
+    left: 100%;
+    margin-left: 5px;
+    margin-right: 0;
+    right: auto;
+    transform: translateX(20px);
+}
+
+/* Column elements container */
+.vivid-column-elements-container {
+	padding:10px 10px;
+	background-color:#0a0d1f;
+	@include borderRadiusAll(2px);
+}
+
+.vivid-column-container {
+    box-sizing: border-box;
+    cursor: pointer;
+    min-height: 50px;
+    outline: 1px dotted #999999;
+    position: relative;
+	width:100%;
+}
+
+.vivid-column-container::before {
+    bottom: 0;
+    content: "\f132";
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    height: 30px;
+	color:white;
+    left: 0;
+    line-height: 30px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-transform: none;
+    top: 0;
+    width: 30px;
+    z-index: 0;
+		
+}
+
+
+.vivid-col-options {
+	float:right;	
+	cursor: pointer;
+	color:#999;
+	font-size: 14px;
+    font-weight: 300;
+    height: 21px;
+    line-height: .5;
+    padding: 2px 2px 0 3px;
+    text-align: center;
+    width: 18px;
+	
+	transition: all 0.4s;
+}
+
+
+.vivid-col-options:hover {
+	color: white;
+}
+
+.vivid-col-number {
+	font-size:11px;
+	float:left;	
+	color:#666;
+}

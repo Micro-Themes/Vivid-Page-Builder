@@ -1,0 +1,149 @@
+/* Flexbox framework */
+
+.vivid-row {
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+	/*max-width:1270px;*/
+	margin-left: auto;
+    margin-right: auto;
+	margin-bottom:15px;
+	
+	/* justify-content:center; */
+	align-content:center;	
+}
+
+.vivid-box {
+	flex-grow:1;
+	margin:0 15px 0px;
+	font-size:20px;
+	color:white;
+	text-align:center;
+}
+
+.vivid-box > textarea {
+	border:1px solid #ccc;	
+}
+
+
+/* Standard Columns */
+.vivid-box.box-lg-1 {
+	flex-basis:100%;	
+}
+
+.vivid-box.box-lg-2 {
+	flex-basis:calc(50% - 50px);
+}
+
+.vivid-box.box-lg-3 {
+	flex-basis:calc(33.333% - 50px);
+}
+
+.vivid-box.box-lg-4 {
+	flex-basis:calc(25% - 50px);	
+}
+
+.vivid-box.box-lg-5 {
+	flex-basis:calc(20% - 50px);
+}
+
+.vivid-box.box-lg-6 {
+	flex-basis:calc(66.66% - 50px);
+}
+
+.vivid-box.box-lg-7 {
+	flex-basis:calc(75% - 50px);
+}
+
+.vivid-box.box-lg-8 {
+	flex-basis:calc(50% - 50px);
+}
+
+/* Magazine Columns */
+.vivid-magazine-column {
+	padding:0px;	
+	margin:0px;
+	background-color:transparent;
+	display:flex; /* required to wrap columns */
+	/*align-items: center;*/
+    flex-flow: row wrap;
+	
+}
+
+.vivid-magazine-column > .vivid-box {
+	margin-bottom:15px;	
+}
+
+.vivid-box.magazine-full-column {
+	flex-basis:100%;	
+}
+
+.vivid-box.magazine-half-column {
+    width:40%;
+}
+
+/* Breakpoints */
+@media only screen and (min-width: 1200px) and (max-width: 5000px) { /* crank up to 5000px to support high res monitors and TV's */
+	
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+	
+	/* Standard columns */
+	.vivid-box.box-lg-5 {
+		flex-basis: calc(33.33% - 50px);
+	}
+	
+}
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+	
+	/* Standard columns */
+	.vivid-box.box-lg-4 {
+		flex-basis: calc(50% - 50px);
+	}
+	
+	.vivid-box.box-lg-5 {
+		flex-basis: calc(33.33% - 50px);
+	}
+	
+}
+
+@media only screen and (max-width: 767px) {
+	
+	/* Standard columns */
+	.vivid-box.box-lg-3 {
+		flex-basis: calc(100% - 50px);
+	}
+	
+	.vivid-box.box-lg-4 {
+		flex-basis: calc(100% - 50px);
+	}
+	
+	.vivid-box.box-lg-5 {
+		flex-basis: calc(50% - 50px);
+	}
+	
+}
+
+@media (max-width: 480px) {
+	
+	/* Standard columns */
+	.vivid-box.box-lg-2 {
+		flex-basis: calc(100% - 50px);
+	}
+	
+	.vivid-box.box-lg-5 {
+		flex-basis: calc(100% - 50px);
+	}
+	
+	/* Magazine columns */
+	.vivid-box.magazine-half-column {
+		width: 100%;
+	}
+	
+}
+
+@media (max-width: 320px) {
+	
+}

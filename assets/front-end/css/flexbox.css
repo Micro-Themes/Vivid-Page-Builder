@@ -1,0 +1,178 @@
+/* Flexbox framework */
+.vivid-container {
+	width:100%;	
+	text-align:center;
+}
+
+.vivid-row {
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+	max-width:1270px;
+	margin-left: auto;
+    margin-right: auto;
+	
+	/* justify-content:center; */
+	align-content:center;	
+}
+
+.vivid-box {
+	flex-grow:1;
+	background-color:#666;
+	border:0px solid orange;
+	margin: 0 15px 15px 5px;
+	padding:10px;
+	
+	font-size:20px;
+	color:white;
+	text-align:center;
+}
+
+
+/* Standard Columns */
+.vivid-box.box-lg-1 {
+	flex-basis:100%;	
+}
+
+.vivid-box.box-lg-2 {
+	flex-basis:calc(50% - 50px);
+}
+
+.vivid-box.box-lg-3 {
+	flex-basis:calc(33.333% - 50px);
+}
+
+.vivid-box.box-lg-4 {
+	flex-basis:calc(25% - 50px);	
+}
+
+.vivid-box.box-lg-5 {
+	flex-basis:calc(20% - 50px);
+}
+
+.vivid-box.box-lg-6 {
+	flex-basis:calc(66.66% - 50px);
+}
+
+.vivid-box.box-lg-7 {
+	flex-basis:calc(75% - 50px);
+}
+
+.vivid-box.box-lg-8 {
+	flex-basis:calc(50% - 50px);
+}
+
+/* Magazine Columns */
+.vivid-magazine-column {
+	padding:0px;	
+	margin:0px;
+	background-color:transparent;
+	display:flex; /* required to wrap columns */
+	/*align-items: center;*/
+    flex-flow: row wrap;
+	
+}
+
+.vivid-box.magazine-full-column {
+	flex-basis:100%;	
+}
+
+.vivid-box.magazine-half-column {
+    width:40%;
+}
+
+/* Masonry layouts */
+.vivid-row.vivid-masonry {
+	
+	display: -webkit-box; 
+    display: -webkit-flex; 
+    display: -ms-flexbox; 
+    display: flex; 
+    -webkit-box-orient: vertical; 
+    -webkit-box-direction: normal; 
+    -webkit-flex-direction: column; 
+      -ms-flex-direction: column; 
+          flex-direction: column; 
+    -webkit-flex-wrap: wrap; 
+      -ms-flex-wrap: wrap; 
+          flex-wrap: wrap;
+    height: 100vw;
+}
+
+.vivid-row.vivid-masonry > .vivid-box {
+	display:inline;
+    overflow:hidden;
+    width: 33.333%;
+	background-color:#666;
+}
+
+.vivid-row.vivid-masonry > .vivid-box > img {
+	max-width:150%;
+}
+
+
+/* Breakpoints */
+@media only screen and (min-width: 1200px) and (max-width: 5000px) { /* crank up to 5000px to support high res monitors and TV's */
+	
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+	
+	/* Standard columns */
+	.vivid-box.box-lg-5 {
+		flex-basis: calc(33.33% - 50px);
+	}
+	
+}
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+	
+	/* Standard columns */
+	.vivid-box.box-lg-4 {
+		flex-basis: calc(50% - 50px);
+	}
+	
+	.vivid-box.box-lg-5 {
+		flex-basis: calc(33.33% - 50px);
+	}
+	
+}
+
+@media only screen and (max-width: 767px) {
+	
+	/* Standard columns */
+	.vivid-box.box-lg-3 {
+		flex-basis: calc(100% - 50px);
+	}
+	
+	.vivid-box.box-lg-4 {
+		flex-basis: calc(100% - 50px);
+	}
+	
+	.vivid-box.box-lg-5 {
+		flex-basis: calc(50% - 50px);
+	}
+	
+}
+
+@media (max-width: 480px) {
+	
+	/* Standard columns */
+	.vivid-box.box-lg-2 {
+		flex-basis: calc(100% - 50px);
+	}
+	
+	.vivid-box.box-lg-5 {
+		flex-basis: calc(100% - 50px);
+	}
+	
+	/* Magazine columns */
+	.vivid-box.magazine-half-column {
+		width: 100%;
+	}
+	
+}
+
+@media (max-width: 320px) {
+	
+}
